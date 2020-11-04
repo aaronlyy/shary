@@ -1,6 +1,3 @@
-from .errors import SharyError
+# __init__.py
 
-from .services import (
-    AnonfilesApi,
-    AnonfilesApiError
-)
+from .shary import Shary

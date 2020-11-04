@@ -6,22 +6,23 @@ with open("README.md", "r") as f:
 
 setup(
   name = 'shary',
-  packages = ['shary'],
+  packages = ['shary', 'shary.services'],
   entry_points = {
     "console_scripts": [
-      "shary = shary.cli:main"
+      "shary = shary.cli:cli"
     ]
   },
-  version = '0.0.2',
+  version = '0.0.23',
   license='GNU General Public License Version 3',
   description = 'API Wrapper around several File Hosting Services',
   long_description = _long_description,
   long_description_content_type='text/markdown',
   author = 'Aaron Levi Can (aaronlyy)',
   url = 'https://github.com/aaronlyy/shary',
-  download_url = 'https://github.com/aaronlyy/levish/archive/v0.0.2.tar.gz',
+  download_url = 'https://github.com/aaronlyy/levish/archive/v0.0.23.tar.gz',
   keywords = ['api', 'wrapper', 'files', 'hosting', 'filehosting'],
   install_requires=[
-        "requests"
+        "requests",
+        "click"
       ],
 )
